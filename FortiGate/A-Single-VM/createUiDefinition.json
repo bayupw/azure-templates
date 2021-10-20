@@ -279,18 +279,6 @@
 											"requireContiguousAddresses": true
 										}
 									},
-									"subnet3": {
-										"label": "Protected subnet",
-										"defaultValue": {
-											"name": "ProtectedSubnet",
-											"addressPrefixSize": "/24"
-										},
-										"constraints": {
-											"minAddressPrefixSize": "/27",
-											"minAddressCount": 8,
-											"requireContiguousAddresses": true
-										}
-									}
 								},
 								"visible": true
 							},
@@ -355,60 +343,6 @@
 								}
 							}
 						]
-					}
-				]
-			},
-			{
-				"name": "publicip",
-				"label": "Public IP",
-				"subLabel": {
-					"preValidation": "Configure public networking",
-					"postValidation": "Done"
-				},
-				"elements": [
-					{
-						"name": "publiciptext",
-						"type": "Microsoft.Common.TextBlock",
-						"visible": true,
-						"options": {
-							"text": "The public IP will be used for public services hosted on the FortiGate such as IPSEC termination, management of the FortiGate from external or services behind the Fortigate such as a webserver."
-						}
-					},
-					{
-						"name": "publicip",
-						"type": "Microsoft.Network.PublicIpAddressCombo",
-						"label": {
-							"publicIpAddress": "Public IP address",
-							"domainNameLabel": "Domain name label"
-						},
-						"toolTip": {
-							"publicIpAddress": "Public IP attached to FortiGate VM",
-							"domainNameLabel": "DNS name linked to this public IP"
-						},
-						"defaultValue": {
-							"publicIpAddressName": "FGTPublicIP",
-							"domainNameLabel": "mydomain"
-						},
-						"constraints": {
-							"required": {
-								"domainNameLabel": false
-							}
-						},
-						"options": {
-							"hideNone": false,
-							"hideDomainNameLabel": true
-						},
-						"visible": true
-					},
-					{
-						"name": "standardsku",
-						"type": "Microsoft.Common.InfoBox",
-						"visible": true,
-						"options": {
-							"icon": "Info",
-							"text": "This deployment can use standard or basic SKU public IP's. Moving to a Active/Passive or Active/Active setup requires the use of a standard SKU public IP. Microsoft Azure offers a migration path from a basic to standard SKU public IP.",
-							"uri": "https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-public-ip-address-upgrade?tabs=option-upgrade-cli%2Coption-migrate-powershell"
-						}
 					}
 				]
 			},
