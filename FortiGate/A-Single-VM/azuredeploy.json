@@ -85,31 +85,6 @@
         "description": "Choose between an existing or new public IP for the External Azure Load Balancer"
       }
     },
-    "publicIPName": {
-      "type": "string",
-      "defaultValue": "",
-      "metadata": {
-        "description": "Name of Public IP address element"
-      }
-    },
-    "publicIPResourceGroup": {
-      "type": "string",
-      "defaultValue": "",
-      "metadata": {
-        "description": "Resource group to which the Public IP belongs"
-      }
-    },
-    "publicIPAddressType": {
-      "type": "string",
-      "defaultValue": "Static",
-      "allowedValues": [
-        "Dynamic",
-        "Static"
-      ],
-      "metadata": {
-        "description": "Type of public IP address"
-      }
-    },
     "vnetNewOrExisting": {
       "type": "string",
       "defaultValue": "new",
@@ -182,20 +157,6 @@
       "defaultValue": "172.16.136.68",
       "metadata": {
         "description": "Subnet 2 start address, 2 consecutive private IPs are required"
-      }
-    },
-    "subnet3Name": {
-      "type": "string",
-      "defaultValue": "ProtectedASubnet",
-      "metadata": {
-        "description": "Protected A Subnet 5 Name"
-      }
-    },
-    "subnet3Prefix": {
-      "type": "string",
-      "defaultValue": "172.16.137.0/24",
-      "metadata": {
-        "description": "Protected A Subnet 3 Prefix"
       }
     },
     "fortiManager": {
