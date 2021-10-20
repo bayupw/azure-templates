@@ -26,18 +26,6 @@
         "acceleratedNetworking": {
             "value": "false"
         },
-        "publicIPNewOrExisting": {
-            "value": "new"
-        },
-        "publicIPName": {
-            "value": ""
-        },
-        "publicIPResourceGroup": {
-            "value": ""
-        },
-        "publicIPAddressType": {
-            "value": "Static"
-        },
         "vnetNewOrExisting": {
             "value": "new"
         },
@@ -61,12 +49,6 @@
         },
         "subnet2Prefix": {
             "value": "172.16.136.64/26"
-        },
-        "subnet3Name": {
-            "value": "ProtectedASubnet"
-        },
-        "subnet3Prefix": {
-            "value": "172.16.137.0/24"
         },
         "fortiManager": {
             "value": "no"
